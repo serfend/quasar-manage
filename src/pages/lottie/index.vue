@@ -2,7 +2,7 @@
   <base-content>
     <div class="base-markdown-content">
       <q-skeleton type="text" height="150px" v-if="!isLottieF"/>
-      <lottie-web-cimo
+      <lottie-web-SGT
         ref="lottie_web"
         :path="defaultOptions.path"
         :loop="defaultOptions.loop"
@@ -40,12 +40,12 @@
 
 <script>
 import BaseContent from '../../components/BaseContent/BaseContent'
-import LottieWebCimo from '../../components/LottieWebCimo/LottieWebCimo'
+import LottieWebSGT from '../../components/LottieWebSGT/index'
 
 export default {
   name: 'my-lottie',
   components: {
-    LottieWebCimo,
+    LottieWebSGT,
     BaseContent
   },
   data () {

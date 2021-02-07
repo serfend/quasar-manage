@@ -36,7 +36,7 @@
               <img :src="this.$PUBLIC_PATH + 'data/avatar.jpg'">
             </q-avatar>
 
-            <div class="text-subtitle1 q-mt-md q-mb-xs">Hi！ CIMO</div>
+            <div class="text-subtitle1 q-mt-md q-mb-xs">Hi！ SGT</div>
 
             <q-btn
               color="primary"

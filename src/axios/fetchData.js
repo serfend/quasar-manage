@@ -5,7 +5,7 @@ import Vue from 'vue'
  * Custom general axios package class
  * @param query Request body
  * @returns {*}
- * @author cimo
+ * @author SGT
  */
 
 const fetchData = query => {

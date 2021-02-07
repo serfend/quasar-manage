@@ -4,7 +4,7 @@ const colorList = ['#9E87FF', '#73DDFF', '#fe9a8b', '#F56948', '#9E87FF']
 const option = {
   backgroundColor: '#fff',
   title: {
-    text: '全国6月销售统计',
+    text: '病毒趋势',
     textStyle: {
       fontSize: 12,
       fontWeight: 400
@@ -49,7 +49,7 @@ const option = {
   },
   xAxis: [{
     type: 'category',
-    data: ['北京', '上海', '广州', '深圳', '香港', '澳门', '台湾', '南宁', '海外'],
+    data: ['1月', '2月', '3月', '4月', '5月', '6月', '7月', '8月'],
     axisLine: {
       lineStyle: {
         color: '#DCE2E8'
@@ -165,7 +165,7 @@ padding[2]的10:
   }],
   series: [
     {
-      name: 'Adidas',
+      name: '永恒之蓝',
       type: 'line',
       data: [10, 10, 30, 12, 15, 3, 7, 9, 8],
       symbolSize: 1,
@@ -196,7 +196,7 @@ padding[2]的10:
       }
     },
     {
-      name: 'Nike',
+      name: '宏病毒',
       type: 'line',
       data: [5, 12, 11, 14, 25, 16, 10, 19, 25],
       symbolSize: 1,
@@ -227,7 +227,7 @@ padding[2]的10:
       }
     },
     {
-      name: '老北京布鞋',
+      name: '染毒程序',
       type: 'line',
       data: [150, 120, 170, 140, 500, 160, 110, 95, 165],
       symbolSize: 1,

@@ -1,4 +1,4 @@
-
+import sgt from './SGT'
 /**
  * Routes that require authorized access
  */
@@ -12,8 +12,9 @@ const asyncRoutesChildren = [
       icon: 'home',
       keepAlive: true
     },
-    component: () => import('../pages/home/home')
+    component: () => import('../pages/home')
   },
+  sgt,
   {
     path: '/start',
     name: 'start',
@@ -23,7 +24,7 @@ const asyncRoutesChildren = [
       icon: 'design_services',
       keepAlive: true
     },
-    component: () => import('../components/Layout/layout'),
+    component: () => import('../components/Layout'),
     children: [
       {
         path: 'getting-started',
@@ -64,11 +65,11 @@ const asyncRoutesChildren = [
     path: '/optimization',
     name: 'optimization',
     meta: {
-      roles: ['admin', 'test'],
+      roles: ['admin'],
       title: '性能优化',
       icon: 'memory'
     },
-    component: () => import('../components/Layout/layout'),
+    component: () => import('../components/Layout'),
     children: [
       {
         path: 'VolumeOptimization',
@@ -97,9 +98,9 @@ const asyncRoutesChildren = [
   {
     path: '/component',
     name: 'component',
-    component: () => import('../components/Layout/layout'),
+    component: () => import('../components/Layout'),
     meta: {
-      roles: ['admin', 'test'],
+      roles: ['admin'],
       title: '组件说明',
       icon: 'apps',
       isOpen: true,
@@ -209,51 +210,6 @@ const asyncRoutesChildren = [
     component: () => import('../pages/axios/axios.vue')
   },
   {
-    path: '/menu-1',
-    name: 'menu-1',
-    meta: {
-      roles: ['admin', 'test'],
-      title: '三级菜单',
-      icon: 'filter_3'
-    },
-    component: () => import('../components/Layout/layout'),
-    children: [
-      {
-        path: 'menu-2',
-        name: 'menu-2',
-        meta: {
-          roles: ['admin', 'test'],
-          title: '菜单 1-1',
-          icon: 'filter_2',
-          keepAlive: true
-        },
-        component: () => import('../components/Layout/layout'),
-        children: [
-          {
-            path: 'menu-3',
-            name: 'menu-3',
-            meta: {
-              roles: ['admin', 'test'],
-              title: '菜单 1-2',
-              icon: 'filter_1',
-              keepAlive: true
-            },
-            component: () => import('../pages/components/menu-3.vue')
-          }
-        ]
-      }
-    ]
-  },
-  {
-    path: 'http://www.quasarchs.com/vue-components/button',
-    name: 'external-link',
-    meta: {
-      roles: ['admin', 'editor'],
-      title: '外部链接/更多组件',
-      icon: 'send'
-    }
-  },
-  {
     path: '/my-lottie',
     name: 'my-lottie',
     meta: {
@@ -263,7 +219,7 @@ const asyncRoutesChildren = [
       icon: 'videocam',
       keepAlive: true
     },
-    component: () => import('../pages/lottie/lottie')
+    component: () => import('../pages/lottie')
   },
   {
     path: '/tableDetail',
@@ -275,17 +231,6 @@ const asyncRoutesChildren = [
       isHidden: true
     },
     component: () => import('../pages/home/tableDetail')
-  },
-  {
-    path: '/cimo',
-    name: 'cimo',
-    meta: {
-      roles: ['admin', 'editor'],
-      title: '关于作者',
-      icon: 'fab fa-studiovinari',
-      isHidden: true
-    },
-    component: () => import('../pages/components/cimo')
   },
   {
     path: '*', // This must be placed at the bottom

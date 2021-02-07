@@ -47,15 +47,15 @@
 // 在路由配置中
 ...
 {
-  path: '/cimo',
-  name: 'cimo',   // 这两处相同
-  component: () => import('../views/components/cimo')
+  path: '/SGT',
+  name: 'SGT',   // 这两处相同
+  component: () => import('../views/components/SGT')
 },
 ...
 
-// 在 cimo 组件中
+// 在 SGT 组件中
 export default {
-  name: 'cimo',   // 这两处相同
+  name: 'SGT',   // 这两处相同
   ...
 }
 ```

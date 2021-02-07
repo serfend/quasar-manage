@@ -15,11 +15,11 @@
             <source type="video/mp4" src="https://cdn.quasar.dev/img/polina.mp4">
           </video>
         </template>
-        <h3 class="text-white">CIMO</h3>
+        <h3 class="text-white">SGT</h3>
       </q-parallax>
       <h2>2</h2>
       <h5>作者的其他项目</h5>
-      <h5>2.1 cimo 音乐播放器 （Android）<a style="text-decoration: none" target="_blank" href="https://github.com/972784674t/Experiment08">Github地址</a></h5>
+      <h5>2.1 SGT 音乐播放器 （Android）<a style="text-decoration: none" target="_blank" href="https://github.com/972784674t/Experiment08">Github地址</a></h5>
       <p>Service + BroadcastReceiver 实现</p>
       <div class="row justify-center">
         <iframe src="//player.bilibili.com/player.html?aid=625498947&bvid=BV1Bt4y1y7zF&cid=183527309&page=1"
@@ -31,7 +31,7 @@
                 framespacing="0"
                 allowfullscreen="true"/>
       </div>
-      <h5>2.2 CimoGallery （Android Material Design 组件集合Demo) <a target="_blank" style="text-decoration: none" href="https://github.com/972784674t/CimoShop">Github地址</a></h5>
+      <h5>2.2 SGTGallery （Android Material Design 组件集合Demo) <a target="_blank" style="text-decoration: none" href="https://github.com/972784674t/SGTShop">Github地址</a></h5>
       <p> <a target="_blank" style="text-decoration: none" href="https://www.bilibili.com/video/BV1w4411t7UQ?p=1">longway777</a> 这位大佬用 kotlin 写了一个简易版的画廊Demo，我就想能不能用 Java 也实现一个 Demo ，顺便加上自己喜欢的元素</p>
       <p>于是就对着 Kotlin 把 Java 代码敲出来了，还加了很多额外的功能。</p>
       <div class="row justify-center">
@@ -74,7 +74,7 @@
 import BaseContent from '../../components/BaseContent/BaseContent'
 
 export default {
-  name: 'cimo',
+  name: 'SGT',
   components: { BaseContent }
 }
 </script>

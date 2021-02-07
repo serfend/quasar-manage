@@ -12,5 +12,5 @@ export default {
 <style>
   @import "./assets/css/main.css";
   @import './assets/css/transition.css';
-  @import "./assets/css/cimo.css";
+  @import "./assets/css/SGT.css";
 </style>

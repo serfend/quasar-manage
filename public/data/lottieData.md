@@ -36,7 +36,7 @@ npm install  // or cnpm i
 import lottie from 'lottie-web'
 
 export default {
-  name: 'lottie-web-cimo',
+  name: 'lottie-web-SGT',
   data () {
     return {
       lottie: {}
@@ -97,7 +97,7 @@ export default {
 ```
 ### 如何使用
 ```html
-<lottie-web-cimo
+<lottie-web-SGT
   ref="lottie_web"
   :path="defaultOptions.path"
   :loop="defaultOptions.loop"
@@ -106,11 +106,11 @@ export default {
   />
 
 <script>
-import LottieWebCimo from '../../components/lottie-web-cimo/lottie-web-cimo'
+import LottieWebSGT from '../../components/lottie-web-SGT/lottie-web-SGT'
 
 export default {
   ...
-  components: { LottieWebCimo },
+  components: { LottieWebSGT },
   data () {
     return {
       defaultOptions: {

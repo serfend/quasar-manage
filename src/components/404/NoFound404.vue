@@ -1,6 +1,6 @@
 <template>
    <div>
-    <lottie-web-cimo style="height: 80vh" path="https://assets6.lottiefiles.com/datafiles/OzG1c5GtuAvq10U/data.json"/>
+    <lottie-web-SGT style="height: 80vh" :path="`${this.$PUBLIC_PATH}lotties/404.json`"/>
      <div class="row justify-center">
      <q-btn
        icon="arrow_back"
@@ -17,11 +17,11 @@
 </template>
 
 <script>
-import LottieWebCimo from '../LottieWebCimo/LottieWebCimo'
+import LottieWebSGT from '../LottieWebSGT'
 
 export default {
   name: 'NoFound404',
-  components: { LottieWebCimo },
+  components: { LottieWebSGT },
   methods: {
     back () {
       window.history.back(-1)
