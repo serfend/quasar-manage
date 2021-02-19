@@ -1,4 +1,4 @@
-const echarts = require('echarts/lib/echarts')
+import * as echarts from 'echarts'
 
 const option = {
   backgroundColor: '#fff',

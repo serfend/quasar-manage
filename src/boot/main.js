@@ -2,7 +2,7 @@
  * main boot file
  */
 // import _router from '../router/permission'
-import '../components/ECharts/EChartsConfig'
+import './echarts'
 import '../components/Markdown/Markdown'
 import '../quasar.manage.config'
 import '../axios/fetchData'

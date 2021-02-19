@@ -1,4 +1,4 @@
-const echarts = require('echarts/lib/echarts')
+import * as echarts from 'echarts'
 
 const colorList = ['#9E87FF', '#73DDFF', '#fe9a8b', '#F56948', '#9E87FF']
 const option = {
