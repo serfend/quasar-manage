@@ -3,7 +3,7 @@
  * @param obj
  * @returns {[]|{}}
  */
-function deepClone (obj) {
+function deepClone(obj) {
   if (obj === null) {
     return
   }
@@ -23,23 +23,22 @@ function deepClone (obj) {
  * @param obj
  * @returns {*}
  */
-export function getFirst (obj) {
-  for (const key in obj) {
-    return obj[key]
-  }
+export function getFirst(obj) {
+  const r = obj && Object.values(obj)[0]
+  return r
 }
 
 /**
  * 处理百度统计 Processing Baidu statistics
  */
-export function handleBaiduStatistics () {
+export function handleBaiduStatistics() {
   // eslint-disable-next-line no-use-before-define
-  var _hmt = _hmt || []
+  const _hmt = _hmt || []
   window._hmt = _hmt; // Mount _hmt under the window
   (function () {
-    var hm = document.createElement('script')
+    const hm = document.createElement('script')
     hm.src = 'https://hm.baidu.com/hm.js?a58d33108bfd0357ba78d883f1149708'
-    var s = document.getElementsByTagName('script')[0]
+    const s = document.getElementsByTagName('script')[0]
     s.parentNode.insertBefore(hm, s)
   })()
 }
